@@ -1,12 +1,13 @@
 import React from 'react'
 import { assets } from '../../assets/assets'
+import {NavLink} from 'react-router-dom'
 
 const Sidebar = () => {
   return (
-    <div>
+    <div className='flex flex-col  border-r border-gray-200 pt-6 min-h-full'>
         <NavLink end={true} to='/admin' className={({isActive})=> `flex items-center
             gap-3 py-3.5 px-3 md:px-9 md:min-w-64 cursor-pointer ${isActive && 
-               "bg-primary/10 bprder-r-4 border-primary "}>
+               "bg-primary/10 border-r-4 border-primary "}>
         `}>
             <img src={assets.home_icon} alt="" className='min-w-4 w-5'/>
             <p className='hidden md:inline-block'>Dashboard</p>
@@ -14,7 +15,7 @@ const Sidebar = () => {
 
         <NavLink  to='/admin/addBlog' className={({isActive})=> `flex items-center
             gap-3 py-3.5 px-3 md:px-9 md:min-w-64 cursor-pointer ${isActive && 
-               "bg-primary/10 bprder-r-4 border-primary "}>
+               "bg-primary/10 border-r-4 border-primary "}>
         `}>
             <img src={assets.add_icon} alt="" className='min-w-4 w-5'/>
             <p className='hidden md:inline-block'>Add Blogs</p>
@@ -22,7 +23,7 @@ const Sidebar = () => {
 
         <NavLink  to='/admin/listBlog' className={({isActive})=> `flex items-center
             gap-3 py-3.5 px-3 md:px-9 md:min-w-64 cursor-pointer ${isActive && 
-               "bg-primary/10 bprder-r-4 border-primary "}>
+               "bg-primary/10 border-r-4 border-primary "}>
         `}>
             <img src={assets.list_icon} alt="" className='min-w-4 w-5'/>
             <p className='hidden md:inline-block'>List Blogs</p>
@@ -30,7 +31,7 @@ const Sidebar = () => {
 
         <NavLink  to='/admin/comments' className={({isActive})=> `flex items-center
             gap-3 py-3.5 px-3 md:px-9 md:min-w-64 cursor-pointer ${isActive && 
-               "bg-primary/10 bprder-r-4 border-primary "}>
+               "bg-primary/10 b0rder-r-4 border-primary "}>
         `}>
             <img src={assets.comment_icon} alt="" className='min-w-4 w-5'/>
             <p className='hidden md:inline-block'>Comments</p>

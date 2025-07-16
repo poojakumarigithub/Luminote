@@ -12,7 +12,7 @@ const Layout = () => {
   return (
     <>
         <div className='flex items-center justify-between h-[70px] px-4 py-2 sm:px-12 border-b border-gray-200'>
-            <img src={assets.luminote} alt="" className='w-32 sm:w-40 cursor-pointer'
+            <img src={assets.luminote} alt="" className='w-26 sm:w-20 cursor-pointer'
                 onClick={()=> navigate('/')}
             />
             <button className='text-sm px-8 py-2 bg-primary text-white rounded-full cursor-pointer'
